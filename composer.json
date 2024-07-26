@@ -1,0 +1,16 @@
+{
+    "name": "papa/payment_module",
+    "description": "Module de paiement électronique avec Mobile Money et Carte bancaire",
+    "authors": [
+        {
+            "name": "papa omar",
+            "email": "o.d43@zig.univ.sn"
+        }
+    ],
+    "require": {
+        "stripe/stripe-php": "^15.3"
+    },
+    "minimum-stability": "stable",
+    "type": "project",
+    "license": "MIT"
+}

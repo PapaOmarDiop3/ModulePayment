@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <img src="logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+        <h1>Contactez-nous</h1>
+    </header>
+    <div class="container mt-5">
+        <div class="card shadow-lg border-primary">
+            <div class="card-header text-center bg-primary text-white">
+                <h2>Nous contacter</h2>
+            </div>
+            <div class="card-body">
+                <p>Pour toute question ou problème concernant le module de paiement, veuillez nous contacter via les méthodes suivantes :</p>
+                <ul>
+                    <li>Email: <a href="mailto:support@example.com">support@example.com</a></li>
+                    <li>Téléphone: +33 1 23 45 67 89</li>
+                    <li>Adresse: 123 Rue de l'Exemple, 75001 Paris, France</li>
+                </ul>
+                <form action="mailto:support@example.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Nom:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-center py-3 mt-5">
+        <p>&copy; 2024 Module de Paiement Électronique. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement par Carte Bancaire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <img src="logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+        <h1>Paiement par Carte Bancaire</h1>
+    </header>
+    <div class="container mt-5">
+        <div class="card shadow-lg border-primary">
+            <div class="card-header text-center bg-primary text-white">
+                <h2>Informations de Paiement</h2>
+            </div>
+            <div class="card-body">
+                <form action="stripe_payment_process.php" method="post" id="payment-form">
+                    <div class="form-group">
+                        <label for="amount">Montant:</label>
+                        <input type="number" class="form-control" id="amount" name="amount" required>
+                    </div>
+                    <div id="card-element" class="form-group">
+                        <!-- A Stripe Element will be inserted here. -->
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Payer maintenant</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-center py-3 mt-5">
+        <p>&copy; 2024 Module de Paiement Électronique. Tous droits réservés.</p>
+    </footer>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="scripts/stripe_payment.js"></script>
+</body>
+</html>
